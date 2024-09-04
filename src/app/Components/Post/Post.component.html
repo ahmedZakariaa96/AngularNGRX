@@ -1,0 +1,15 @@
+<h1>Posts</h1>
+
+<div *ngFor="let item of  this.Posts|async">
+
+  <p>"userId:" {{item.userId}}</p>
+  <p>"id:" {{item.id}}</p>
+  <p>"title:" {{item.title}}</p>
+  <p>"body:" {{item.body}}</p>
+
+  <div>-------------------------------------------------------------</div>
+
+</div>
+
+
+
