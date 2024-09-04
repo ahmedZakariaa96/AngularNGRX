@@ -14,6 +14,7 @@ export class CustomerViewComponent implements OnInit {
  customers:Observable<Customer[]>;
  selectedCustomer:Customer|undefined;
 
+
   constructor(private store:Store<{customers:Customer[]}>) {
     this.selectedCustomer=undefined;
     this.customers=this.store.pipe(select('customers'));
